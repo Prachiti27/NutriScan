@@ -1,69 +1,52 @@
-# =========================
-# GENERAL
-# =========================
-.DS_Store
-Thumbs.db
+# Miscellaneous
+*.class
 *.log
-*.tmp
+*.pyc
 *.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
 
-# =========================
-# ENV FILES (IMPORTANT)
-# =========================
-.env
-.env.*
-*.env
-
-# =========================
-# PYTHON (BACKEND)
-# =========================
-backend/venv/
-backend/__pycache__/
-backend/*.pyc
-backend/*.pyo
-backend/*.pyd
-backend/.pytest_cache/
-backend/.mypy_cache/
-backend/.idea/
-
-# =========================
-# FASTAPI / UVICORN
-# =========================
-*.sqlite3
-*.db
-
-# =========================
-# FLUTTER (FRONTEND)
-# =========================
-frontend/food_ai_app/.dart_tool/
-frontend/food_ai_app/.packages
-frontend/food_ai_app/.flutter-plugins
-frontend/food_ai_app/.flutter-plugins-dependencies
-frontend/food_ai_app/build/
-frontend/food_ai_app/pubspec.lock
-
-# =========================
-# ANDROID
-# =========================
-frontend/food_ai_app/android/.gradle/
-frontend/food_ai_app/android/local.properties
-
-# =========================
-# IOS
-# =========================
-frontend/food_ai_app/ios/Pods/
-frontend/food_ai_app/ios/.symlinks/
-frontend/food_ai_app/ios/Flutter/Flutter.framework
-frontend/food_ai_app/ios/Flutter/Flutter.podspec
-
-# =========================
-# VS CODE / IDE
-# =========================
-.vscode/
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
 .idea/
 
-# =========================
-# API KEYS (CRITICAL)
-# =========================
-backend/config.py
-backend/secrets.json
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+__pycache__/
+*.pyc
+
+.env
+
+venv/
